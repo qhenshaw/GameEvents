@@ -64,7 +64,7 @@ private void OnDisable()
 
 private void PlayerSpawned(Transform player)
 {
-      Debug.Log($"Player Spawned: {player.gameObject.name});
+      Debug.Log($"Player Spawned: {player.gameObject.name}");
 }
 ```
 
