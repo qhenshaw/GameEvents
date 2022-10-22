@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class GameEvent<T> : ScriptableObject
+public abstract class GameEventAsset<T> : ScriptableObject
 {
     [SerializeField] private bool _log = false;
     [SerializeField] private T _currentValue;

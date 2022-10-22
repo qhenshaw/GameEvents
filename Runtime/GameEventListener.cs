@@ -5,22 +5,22 @@ using UnityEngine.Events;
 
 public abstract class GameEventListener<T> : MonoBehaviour
 {
-    [SerializeField] private GameEvent<T> _gameEvent;
+    [SerializeField] private GameEventAsset<T> _gameEventAsset;
 
-    public UnityEvent<T> OnInvoke;
+    public UnityEvent<T> OnGameEventInvoked;
 
     private void OnEnable()
     {
-        _gameEvent.OnInvoked.AddListener(GameEventInvoked);
+        _gameEventAsset.OnInvoked.AddListener(GameEventInvoked);
     }
 
     private void OnDisable()
     {
-        _gameEvent.OnInvoked.RemoveListener(GameEventInvoked);
+        _gameEventAsset.OnInvoked.RemoveListener(GameEventInvoked);
     }
 
     private void GameEventInvoked(T param)
     {
-        OnInvoke.Invoke(param);
+        OnGameEventInvoked.Invoke(param);
     }
 }

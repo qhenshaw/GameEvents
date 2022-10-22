@@ -10,7 +10,7 @@ public class GameEventWindow : EditorWindow
     private string _typeCapitalized;
     private string _path = "Assets/Scripts/GameEvents/EventTypes/";
 
-    [MenuItem("Tools/Game Events/Create New")]
+    [MenuItem("Tools/Game Events/Create New Event Scripts")]
     public static void ShowWindow()
     {
         GetWindow(typeof(GameEventWindow));
@@ -41,14 +41,14 @@ public class GameEventWindow : EditorWindow
 
     private void CreateEvent()
     {
-        string path = $"{_path}{_typeCapitalized}Event.cs";
+        string path = $"{_path}{_typeCapitalized}EventAsset.cs";
         Debug.Log($"Creating Event: {path}");
         using (StreamWriter outfile = new StreamWriter(path))
         {
             outfile.WriteLine("using UnityEngine;");
             outfile.WriteLine("");
-            outfile.WriteLine($"[CreateAssetMenu(menuName = \"Events/{_typeCapitalized} Event\")]");
-            outfile.WriteLine($"public class {_typeCapitalized}Event : GameEvent<{_type}> {{}}");
+            outfile.WriteLine($"[CreateAssetMenu(menuName = \"Events/{_typeCapitalized} Event Asset\")]");
+            outfile.WriteLine($"public class {_typeCapitalized}EventAsset : GameEventAsset<{_type}> {{}}");
         }
     }
 
