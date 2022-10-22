@@ -1,0 +1,8 @@
+{
+  "name": "com.qhenshaw.gameevents",
+  "displayName": "Game Events",
+  "description": "A ScriptableObject based event system for decoupling monobehaviour components.",
+  "version": "1.0",
+  "unity": "2020.1",
+  "unityRelease": "0f1"
+}
