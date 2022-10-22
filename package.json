@@ -1,8 +1,11 @@
 {
-  "name": "com.qhenshaw.gameevents",
   "displayName": "Game Events",
+  "author": "Quin Henshaw",
+  "version": "1.0.0",
+  "name": "com.qhenshaw.gameevents",
+  "documentationUrl": "https://github.com/qhenshaw/GamEvents",
+  "changelogUrl": "https://github.com/qhenshaw/GamEvents/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/qhenshaw/GamEvents/blob/main/LICENSE.md",
   "description": "A ScriptableObject based event system for decoupling monobehaviour components.",
-  "version": "1.0",
-  "unity": "2020.1",
-  "unityRelease": "0f1"
+  "unity": "2020.1"
 }
