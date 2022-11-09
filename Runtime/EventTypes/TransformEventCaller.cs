@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class TransformEventCaller : GameEventCaller<Transform>
+namespace GameEvents
 {
-
+    public class TransformEventCaller : GameEventCaller<Transform> { }
 }

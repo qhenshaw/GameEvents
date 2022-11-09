@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class StringEventListener : GameEventListener<string>
+namespace GameEvents
 {
-
+    public class StringEventListener : GameEventListener<string> { }
 }

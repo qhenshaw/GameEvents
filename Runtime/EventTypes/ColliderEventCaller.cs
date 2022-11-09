@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class ColliderEventCaller : GameEventCaller<Collider> {}
+namespace GameEvents
+{
+    public class ColliderEventCaller : GameEventCaller<Collider> { }
+}

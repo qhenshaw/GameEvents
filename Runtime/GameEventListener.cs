@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class GameEventListener<T> : MonoBehaviour
+namespace GameEvents
 {
-    [SerializeField] private GameEventAsset<T> _gameEventAsset;
-
-    public UnityEvent<T> OnGameEventInvoked;
-
-    private void OnEnable()
+    public abstract class GameEventListener<T> : MonoBehaviour
     {
-        _gameEventAsset.OnInvoked.AddListener(GameEventInvoked);
-    }
+        [SerializeField] private GameEventAsset<T> _gameEventAsset;
 
-    private void OnDisable()
-    {
-        _gameEventAsset.OnInvoked.RemoveListener(GameEventInvoked);
-    }
+        public UnityEvent<T> OnGameEventInvoked;
 
-    private void GameEventInvoked(T param)
-    {
-        OnGameEventInvoked.Invoke(param);
+        private void OnEnable()
+        {
+            _gameEventAsset.OnInvoked.AddListener(GameEventInvoked);
+        }
+
+        private void OnDisable()
+        {
+            _gameEventAsset.OnInvoked.RemoveListener(GameEventInvoked);
+        }
+
+        private void GameEventInvoked(T param)
+        {
+            OnGameEventInvoked.Invoke(param);
+        }
     }
 }

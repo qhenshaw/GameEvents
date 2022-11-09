@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Events/String Event Asset")]
-public class StringEventAsset : GameEventAsset<string>
+namespace GameEvents
 {
-
+    [CreateAssetMenu(menuName = "Events/String Event Asset")]
+    public class StringEventAsset : GameEventAsset<string> { }
 }

@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class IntEventListener : GameEventListener<int> {}
+namespace GameEvents
+{
+    public class IntEventListener : GameEventListener<int> { }
+}

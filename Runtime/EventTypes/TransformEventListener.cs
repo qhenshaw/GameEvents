@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransformEventListener : GameEventListener<Transform>
+namespace GameEvents
 {
-
+    public class TransformEventListener : GameEventListener<Transform> { }
 }

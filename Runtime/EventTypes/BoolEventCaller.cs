@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class BoolEventCaller : GameEventCaller<bool> {}
+namespace GameEvents
+{
+    public class BoolEventCaller : GameEventCaller<bool> { }
+}

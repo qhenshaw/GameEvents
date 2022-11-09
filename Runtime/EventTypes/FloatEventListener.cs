@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class FloatEventListener : GameEventListener<float>
+namespace GameEvents
 {
-    
+    public class FloatEventListener : GameEventListener<float> { }
 }

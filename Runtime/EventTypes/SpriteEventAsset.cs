@@ -1,4 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Events/Sprite Event Asset")]
-public class SpriteEventAsset : GameEventAsset<Sprite> {}
+namespace GameEvents
+{
+    [CreateAssetMenu(menuName = "Events/Sprite Event Asset")]
+    public class SpriteEventAsset : GameEventAsset<Sprite> { }
+}

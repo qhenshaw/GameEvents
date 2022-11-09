@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Collider2DEventListener : GameEventListener<Collider2D> {}
+namespace GameEvents
+{
+    public class Collider2DEventListener : GameEventListener<Collider2D> { }
+}

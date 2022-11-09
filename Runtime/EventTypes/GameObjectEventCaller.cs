@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class GameObjectEventCaller : GameEventCaller<GameObject> {}
+namespace GameEvents
+{
+    public class GameObjectEventCaller : GameEventCaller<GameObject> { }
+}

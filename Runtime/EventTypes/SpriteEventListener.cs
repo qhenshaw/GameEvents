@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class SpriteEventListener : GameEventListener<Sprite> {}
+namespace GameEvents
+{
+    public class SpriteEventListener : GameEventListener<Sprite> { }
+}

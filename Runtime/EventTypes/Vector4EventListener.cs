@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Vector4EventListener : GameEventListener<Vector4> {}
+namespace GameEvents
+{
+    public class Vector4EventListener : GameEventListener<Vector4> { }
+}

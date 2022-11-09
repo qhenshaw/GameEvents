@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Events/Float Event Asset")]
-public class FloatEventAsset : GameEventAsset<float>
+namespace GameEvents
 {
-
+    [CreateAssetMenu(menuName = "Events/Float Event Asset")]
+    public class FloatEventAsset : GameEventAsset<float> { }
 }

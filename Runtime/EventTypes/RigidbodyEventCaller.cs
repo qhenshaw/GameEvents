@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class RigidbodyEventCaller : GameEventCaller<Rigidbody> {}
+namespace GameEvents
+{
+    public class RigidbodyEventCaller : GameEventCaller<Rigidbody> { }
+}

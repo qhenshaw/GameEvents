@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class SpriteEventCaller : GameEventCaller<Sprite> {}
+namespace GameEvents
+{
+    public class SpriteEventCaller : GameEventCaller<Sprite> { }
+}

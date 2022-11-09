@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class RigidbodyEventListener : GameEventListener<Rigidbody> {}
+namespace GameEvents
+{
+    public class RigidbodyEventListener : GameEventListener<Rigidbody> { }
+}

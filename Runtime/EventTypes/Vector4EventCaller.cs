@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Vector4EventCaller : GameEventCaller<Vector4> {}
+namespace GameEvents
+{
+    public class Vector4EventCaller : GameEventCaller<Vector4> { }
+}
