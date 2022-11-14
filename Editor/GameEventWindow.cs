@@ -8,7 +8,7 @@ namespace GameEvents.Editor
     {
         private string _type;
         private string _typeCapitalized;
-        private string _path = "Assets/Scripts/GameEvents/EventTypes/";
+        private string _path = "Assets/Scripts/CustomEventTypes/";
 
         [MenuItem("Tools/Game Events/Create New Event Scripts")]
         public static void ShowWindow()
