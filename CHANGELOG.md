@@ -1,6 +1,10 @@
 # Changelog
+
+#[3.1.0] - 2023-04-23
+- Added filter value option to GameEventListener
+
 #[3.0.2] - 2002-11-14
-- Moved default new script folde to Scripts/CustomEventTypes
+- Moved default new script folder to Scripts/CustomEventTypes
 
 #[3.0.1] - 2002-11-010
 - Changed Editor ASMDEF to Editor only platform
