@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.2.0] - 2023-11-30
+- Added TriggerVolume component
+
 ## [3.1.0] - 2023-04-23
 - Added filter value option to GameEventListener
 
