@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.3.0] - 2023-12-07
+- Switched filter value to array for multiple filter options
+
 ## [3.2.0] - 2023-11-30
 - Added TriggerVolume component
 
