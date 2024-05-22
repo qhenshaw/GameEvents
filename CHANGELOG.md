@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.3.1] - 2024-05-22
+- Fixed issue with TriggerVolume ignoring tag filter
+
 ## [3.3.0] - 2023-12-07
 - Switched filter value to array for multiple filter options
 

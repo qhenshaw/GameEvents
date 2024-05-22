@@ -50,7 +50,7 @@ namespace GameEvents
         private bool CheckForTagMatch(GameObject other)
         {
             // ignore tag matching if tag is empty
-            if (string.IsNullOrEmpty(other.tag)) return true;
+            if (string.IsNullOrEmpty(_tagFilter)) return true;
             // compare tags
             return other.CompareTag(_tagFilter);
         }
