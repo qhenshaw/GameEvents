@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.4.0] - 2024-09-21
+- Added test button on event asset
+- Added listener log button on event asset
+- Both buttons require Odin Inspector
+
 ## [3.3.1] - 2024-05-22
 - Fixed issue with TriggerVolume ignoring tag filter
 
