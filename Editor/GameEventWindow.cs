@@ -27,7 +27,12 @@ namespace GameEvents.Editor
             }
             EditorGUILayout.LabelField("Enter path to event scripts or use default");
             string path = EditorGUILayout.TextField("Path", _path);
-            if (path != null) _path = path.Trim();
+            if (path != null)
+            {
+                _path = path.Trim();
+                string lastChar = _path.Substring(_path.Length - 1, 1);
+                if (!lastChar.Equals("/")) _path += "/";
+            }
 
             if (GUILayout.Button("Generate"))
             {

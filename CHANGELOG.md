@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.5.0] - 2025-01-30
+- Added Game Event Editor window for easier management of all game events
+- Fixed new event type classes being placed in wrong folder
+
 ## [3.4.0] - 2024-09-21
 - Added test button on event asset
 - Added listener log button on event asset
