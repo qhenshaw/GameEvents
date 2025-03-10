@@ -14,6 +14,9 @@ A custom editor is included that automates the creation of new GameEvent Asset/C
 ## System Requirements
 Unity 2020.1 or later, GameEvents uses the Serializable Generics functionality added in 2020.1 and will absolutely not function in any version before.
 
+> [!WARNING]
+> Requires Odin Inspector for custom editor functionality, feel free to fork and rewrite with Naughty Attributes or similar.
+
 ## Installation
 Use the Package Manager and use Add package from git URL, using the following: 
 ```
